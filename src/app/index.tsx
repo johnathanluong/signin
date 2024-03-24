@@ -1,10 +1,11 @@
-import { Link } from 'expo-router';
+import { Link, Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
 	return (
 		<View style={styles.container}>
+			<Stack.Screen options={{ title: 'Sign In' }} />
 			<Text>Hello world!</Text>
 			<StatusBar style='auto' />
 
