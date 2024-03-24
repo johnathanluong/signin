@@ -1,11 +1,16 @@
+import { Link } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Button, StyleSheet, Text, View } from 'react-native';
 
 export default function App() {
 	return (
 		<View style={styles.container}>
 			<Text>Hello world!</Text>
 			<StatusBar style='auto' />
+
+			<Link href='/protected' asChild>
+				<Button title='Go to protected screen' />
+			</Link>
 		</View>
 	);
 }
