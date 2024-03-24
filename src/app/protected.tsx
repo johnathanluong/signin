@@ -6,14 +6,20 @@ const ProtectedScreen = () => {
 	return (
 		<View>
 			<Stack.Screen options={{ title: 'Signed In' }} />
-			<Text style={styles.text}>Hello there</Text>
+
+			<Text style={styles.header}>Hello there</Text>
+			<Text style={styles.sub}>You should only see this only if you are authenticated.</Text>
 		</View>
 	);
 };
 
 const styles = StyleSheet.create({
-	text: {
+	header: {
 		fontSize: 30
+	},
+	sub: {
+		fontSize: 16,
+		color: '#777'
 	}
 });
 
